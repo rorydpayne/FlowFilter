@@ -1,21 +1,16 @@
 {
-  "name": "Chrome Angular extension with require.js",
-  "version": "0.1.0",
+  "name": "FlowFilter",
+  "version": "1.0",
   "manifest_version": 2,
-  "description": "angular.js chrome extension with require.js",
+  "description": "angular.js chrome extension with require.js to filter a feed in FlowDock",
   "icons": {
     "48": "images/icon.png"
   },
   "browser_action": {
     "default_icon": "images/icon.png",
-    "default_popup": "html/application.html#/popup",
+    "popup": "html/templates/popup.html",
     "default_title": "Extension action"
   },
-
-  "background": {
-    "page": "html/background.html"
-  },
-  "options_page": "html/application.html#/options",
   "permissions": [
     "storage",
     "webRequest",
@@ -35,10 +30,7 @@
       "js": [
         "js/lib/require.js",
         "js/lib/jquery.js",
-        "js/lib/underscore.js",
-        "js/requireContent.js",
-        "js/requireConfig.js",
-        "js/content.js"
+        "js/lib/underscore.js"
       ]
     }
   ],
